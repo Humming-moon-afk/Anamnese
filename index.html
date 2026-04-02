@@ -7,11 +7,29 @@
 </head>
 <body>
     <h1>Digitaler Anamnesebogen</h1>
-    <label>Versicherung</label>
-    <select name="Krankenkasse">
-        <option value="Gesetzlich">Gesetzlich</option>
-        <option value="Privat">Privat</option>
-        <option value="Selbstzahler">Selbstzahler</option>
-    </select>
+    <form>
+        <div>
+            <label>Versicherung</label>
+            <label for="kasse">Versicherung:</label>
+            <select id=kasse name="Krankenkasse">
+                <option value="Gesetzlich">Gesetzlich</option>
+                <option value="Privat">Privat</option>
+                <option value="Selbstzahler">Selbstzahler</option>
+            </select>
+        </div>
+
+        <br> <div>
+            <p>Rauchen sie?</p>
+            <input type="radio" id="ja" name="rauchen" value="ja">
+            <label for="ja">Ja</label>
+
+            <input type="radio" id="nein" name="rauchen" value="nein">
+            <label for="nein">Nein</label>
+        </div>
+
+        <br>
+
+        <button type="submit">Bogen absenden</button>
+    </form>
 </body>
 </html>
