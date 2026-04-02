@@ -9,24 +9,35 @@
     <h1>Digitaler Anamnesebogen</h1>
     <form>
         <div>
-            <label>Versicherung</label>
-            <label for="kasse">Versicherung:</label>
+            <label>Wie sind sie versichert?</label>
             <select id=kasse name="Krankenkasse">
                 <option value="Gesetzlich">Gesetzlich</option>
                 <option value="Privat">Privat</option>
                 <option value="Selbstzahler">Selbstzahler</option>
             </select>
         </div>
-
-        <br> <div>
+        <div>
             <p>Rauchen sie?</p>
             <input type="radio" id="ja" name="rauchen" value="ja">
             <label for="ja">Ja</label>
-
+            <input type="radio" id="nein" name="rauchen" value="nein">
+            <label for="nein">Nein</label>
+        </div>
+        <div>
+            <p>Trinken sie?</p>
+            <input type="radio" id="ja" name="rauchen" value="ja">
+            <label for="ja">Ja</label>
             <input type="radio" id="nein" name="rauchen" value="nein">
             <label for="nein">Nein</label>
         </div>
 
+        <div>
+            <p>Nehmen sie Medikamente?</p>
+            <input type="radio" id="ja" name="rauchen" value="ja">
+            <label for="ja">Ja</label>
+            <input type="radio" id="nein" name="rauchen" value="nein">
+            <label for="nein">Nein</label>
+        </div>
         <br>
 
         <button type="submit">Bogen absenden</button>
